@@ -1,11 +1,12 @@
 import React, { Fragment, useEffect, useState } from 'react';
+import './App.css';
 
 const App = () => {
     useEffect(() => {
         const getAPI = async () => {
             const response = await fetch('http://localhost:8080/');
             const data = await response.json();
-
+            
             try {
                 console.log(data);
                 setLoading(false);
@@ -22,8 +23,7 @@ const App = () => {
 
     return (
         <Fragment>
-            <h1>Home</h1>
-
+            <h1>Welcome</h1>
             <div>
                 {loading ? (
                     <div>Loading</div>
@@ -32,17 +32,17 @@ const App = () => {
                         {anime.map((data) => (
                             <div key={data._id}>
                                 <ul>
-                                    <li>
-                                        <h1>
-                                            <a href="/{data.id}">{data._id}</a>
-                                        </h1>
-                                    </li>
-                                    <li>
+                                    <div>
+                                        <h3>
+                                            <a href="/{data.id}">{data.name}</a>
+                                        </h3>
+                                    </div>
+                                    <div>
                                         <img src={data.image} alt={data.name} />
-                                    </li>
-                                    <li>
+                                    </div>
+                                    <div>
                                         <p>{data.description}</p>
-                                    </li>
+                                    </div>
                                 </ul>
                             </div>
                         ))}
@@ -50,18 +50,15 @@ const App = () => {
                 )}
             </div>
             <div>
-                <h1>Add New</h1>
-                <form method="POST" action="http://localhost:8080/add-anime">
+                <form method="POST" class="box" action="http://localhost:8080/add-anime">
+                    <h2>Add excrcise</h2>
                     <div>
-                        <label>Name</label>
                         <input type="text" name="name" placeholder="Name" required />
                     </div>
                     <div>
-                        <label>Image</label>
                         <input type="text" name="image" placeholder="Image" required />
                     </div>
                     <div>
-                        <label>Description</label>
                         <input type="text" name="description" placeholder="Description" required />
                     </div>
 
