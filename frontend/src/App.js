@@ -22,7 +22,7 @@ const App = () => {
 
     return (
         <Fragment>
-            <h1>Anime Home</h1>
+            <h1>Home</h1>
 
             <div>
                 {loading ? (
@@ -50,7 +50,7 @@ const App = () => {
                 )}
             </div>
             <div>
-                <h1>Add New Anime</h1>
+                <h1>Add New</h1>
                 <form method="POST" action="http://localhost:8080/add-anime">
                     <div>
                         <label>Name</label>
@@ -66,7 +66,7 @@ const App = () => {
                     </div>
 
                     <div>
-                        <button type="submit">Add Anime</button>
+                        <button type="submit">Add List</button>
                     </div>
                 </form>
             </div>
