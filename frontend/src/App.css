@@ -12,6 +12,22 @@ h1{
     font-style: italic;
     font-weight: 600;
 }
+
+.welcomeMessage{
+    margin-left: 3%;
+    color: lavender;
+    background-color: indigo;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    width: 300px;
+    padding: 50px;
+    top: 25%;
+    left: 4%;
+    position: absolute;
+    border-radius: 24px;
+}
+
 .box{
     width: 300px;
     padding: 35px;
@@ -20,7 +36,7 @@ h1{
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 24px;;
-    background-color: #483D8B;
+    background-color: indigo;
     text-align: center;
 }
 
@@ -73,10 +89,6 @@ h1{
     color: white;
 }
 
-/*.result{
-
-}*/
-
 .name{
     font-family: Palatino, URW Palladio L, serif;
     font-size-adjust: 0.7;
@@ -94,5 +106,7 @@ h1{
 
 .result{
     position: absolute;
-    top: 70%;
+    top: 80%;
+    left: 1%;
+    text-align: center;
 }

@@ -25,6 +25,8 @@ const App = () => {
         <Fragment>
             <h1>Welcome</h1>
             <div>
+                <a className="welcomeMessage">Hello and welcome to the page where you can add excercises for gym. Remember to have
+                                            the link for the picture in "Image input"</a>
                 <form method="POST" className="box" action="http://localhost:8080/add-anime">
                     <h2>Add excercise</h2>
                     <div>
@@ -61,6 +63,8 @@ const App = () => {
                                     <div>
                                         <p className="description">{data.description}</p>
                                     </div>
+                                    <br/>
+                                    <hr color="black"/>
                                 </ul>
                             </div>
                         ))}
