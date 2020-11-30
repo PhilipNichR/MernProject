@@ -8,6 +8,7 @@ const app = express();
 
 app.use(cors());
 
+
 app.set('view engine', 'ejs');
 app.set('views', './src/pages');
 
@@ -15,11 +16,9 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/static', express.static(path.join(`${__dirname}/public`)));
 
-app.get('/', (req, res) => res.send('Home Route'));
+const adminRoute = require('./routes/admin');
 
-const cors = require('cors');
-//...
-app.use(cors());
+app.use('/', adminRoute);
 
 const port = process.env.PORT || 8080;
 
@@ -36,12 +35,3 @@ mongoose
     .catch((err) => {
         console.log(err);
     });
-const adminRoute = require('./routes/admin');
-
-// Replace the code for the old route with the new route code
-
-// Old Code
-app.get('/', (req, res) => res.send('Home Route'));
-
-// New Code
-app.use('/', adminRoute);

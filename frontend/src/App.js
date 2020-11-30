@@ -25,33 +25,8 @@ const App = () => {
         <Fragment>
             <h1>Welcome</h1>
             <div>
-                {loading ? (
-                    <div>Loading</div>
-                ) : (
-                    <div>
-                        {anime.map((data) => (
-                            <div key={data._id}>
-                                <ul>
-                                    <div>
-                                        <h3>
-                                            <a href="/{data.id}">{data.name}</a>
-                                        </h3>
-                                    </div>
-                                    <div>
-                                        <img src={data.image} alt={data.name} />
-                                    </div>
-                                    <div>
-                                        <p>{data.description}</p>
-                                    </div>
-                                </ul>
-                            </div>
-                        ))}
-                    </div>
-                )}
-            </div>
-            <div>
-                <form method="POST" class="box" action="http://localhost:8080/add-anime">
-                    <h2>Add excrcise</h2>
+                <form method="POST" className="box" action="http://localhost:8080/add-anime">
+                    <h2>Add excercise</h2>
                     <div>
                         <input type="text" name="name" placeholder="Name" required />
                     </div>
@@ -66,6 +41,31 @@ const App = () => {
                         <button type="submit">Add List</button>
                     </div>
                 </form>
+            </div>
+            <div className="result">
+                {loading ? (
+                    <div>Loading</div>
+                ) : (
+                    <div>
+                        {anime.map((data) => (
+                            <div key={data._id}>
+                                <ul>
+                                    <div>
+                                        <h3>
+                                            <a href="/{data.id}" className="name">{data.name}</a>
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <img src={data.image} alt={data.name} />
+                                    </div>
+                                    <div>
+                                        <p className="description">{data.description}</p>
+                                    </div>
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                )}
             </div>
         </Fragment>
     );

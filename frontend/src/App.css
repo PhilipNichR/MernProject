@@ -6,8 +6,11 @@ position: center;
 }
 
 h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Jazz LET, fantasy;
     text-align: center;
+    font-size-adjust: 0.60;
+    font-style: italic;
+    font-weight: 600;
 }
 .box{
     width: 300px;
@@ -68,4 +71,28 @@ h1{
 
 .box ::placeholder{
     color: white;
+}
+
+/*.result{
+
+}*/
+
+.name{
+    font-family: Palatino, URW Palladio L, serif;
+    font-size-adjust: 0.7;
+    text-decoration: none;
+    color: black;
+
+}
+
+.description{
+    font-family: Andale Mono, monospace;
+    font-size: 0.80;
+    font-weight: 600;
+
+}
+
+.result{
+    position: absolute;
+    top: 70%;
 }
