@@ -58,13 +58,13 @@ const App = () => {
                                         </h3>
                                     </div>
                                     <div>
-                                        <img src={data.image} alt={data.name} />
+                                        <img src={data.image} alt={data.name} className="Image"/>
                                     </div>
                                     <div>
                                         <p className="description">{data.description}</p>
                                     </div>
                                     <br/>
-                                    <hr color="black"/>
+                                    <hr color="black" /*className="hr"*//>
                                 </ul>
                             </div>
                         ))}

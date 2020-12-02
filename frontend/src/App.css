@@ -91,22 +91,38 @@ h1{
 
 .name{
     font-family: Palatino, URW Palladio L, serif;
-    font-size-adjust: 0.7;
+    font-size: 30px;;
     text-decoration: none;
     color: black;
 
 }
 
+.Image{
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.Image:hover{
+    box-shadow: 0 0 4px 2px black;
+}
+
 .description{
     font-family: Andale Mono, monospace;
-    font-size: 0.80;
+    font-size: 18px;
+    font-stretch: expanded;
     font-weight: 600;
 
 }
 
 .result{
+    width: 1400px;
+    padding: 10px;
     position: absolute;
     top: 80%;
     left: 1%;
+    transform: translate(7%, -5%);
     text-align: center;
+    border-radius: 24px;
 }
