@@ -25,22 +25,22 @@ const App = () => {
         <Fragment>
             <h1>Welcome</h1>
             <div>
-                <a className="welcomeMessage">Hello and welcome to the page where you can add excercises for gym. Remember to have
-                                            the link for the picture in "Image input"</a>
+                <a className="welcomeMessage">Hello and welcome to the page where you can add gym excercises. Remember to have
+                                            the link for the picture in the "Excercise image link" field</a>
                 <form method="POST" className="box" action="http://localhost:8080/add-anime">
                     <h2>Add excercise</h2>
                     <div>
-                        <input type="text" name="name" placeholder="Name" required />
+                        <input type="text" name="name" placeholder="Excercise name" required />
                     </div>
                     <div>
-                        <input type="text" name="image" placeholder="Image" required />
+                        <input type="text" name="image" placeholder="Excercise image link" required />
                     </div>
                     <div>
-                        <input type="text" name="description" placeholder="Description" required />
+                        <input type="text" name="description" placeholder="Excercise description" required />
                     </div>
 
                     <div>
-                        <button type="submit">Add List</button>
+                        <button type="submit">Add Excercise</button>
                     </div>
                 </form>
             </div>

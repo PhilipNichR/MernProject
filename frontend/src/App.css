@@ -1,3 +1,4 @@
+
 body{
 background: steelblue;
 margin: 0;
@@ -20,7 +21,7 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-weight: 600;
-    width: 300px;
+    width: 20%;
     padding: 50px;
     top: 25%;
     left: 4%;
@@ -29,13 +30,13 @@ h1{
 }
 
 .box{
-    width: 300px;
-    padding: 35px;
+    width: 20%;
+    padding: 30px;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
-    border-radius: 24px;;
+    border-radius: 30px;;
     background-color: indigo;
     text-align: center;
 }
@@ -111,16 +112,17 @@ h1{
 .description{
     font-family: Andale Mono, monospace;
     font-size: 18px;
+    font-style: italic;
     font-stretch: expanded;
     font-weight: 600;
 
 }
 
 .result{
-    width: 1400px;
+    width: 83%;
     padding: 10px;
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 1%;
     transform: translate(7%, -5%);
     text-align: center;
