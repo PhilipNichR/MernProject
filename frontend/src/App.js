@@ -23,7 +23,7 @@ const App = () => {
 
     return (
         <Fragment>
-            <h1>Welcome</h1>
+            <h1>Why hello there and welcome</h1>
             <div>
                 <a className="welcomeMessage">Hello and welcome to the page where you can add gym excercises. Remember to have
                                             the link for the picture in the "Excercise image link" field</a>

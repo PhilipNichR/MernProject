@@ -9,6 +9,9 @@ position: center;
 h1{
     font-family: Jazz LET, fantasy;
     text-align: center;
+    text-decoration: underline;
+    background-image: linear-gradient(to left, orange, red, indigo, blue); -webkit-background-clip: text;
+    color: transparent;
     font-size-adjust: 0.60;
     font-style: italic;
     font-weight: 600;
@@ -94,7 +97,8 @@ h1{
     font-family: Palatino, URW Palladio L, serif;
     font-size: 30px;;
     text-decoration: none;
-    color: black;
+    background-image: linear-gradient(to left, red, indigo); -webkit-background-clip: text;
+    color: transparent;
 
 }
 
