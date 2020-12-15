@@ -1,5 +1,13 @@
 # MernProject
 ### A page, where you can add excercise moves
+### To set up the whole thing, you first need:
+#### Backend
+* npm init -y
+##### Frontend
+* npm init -y
+#### And to run the whole page, you must write
+#### *npm run dev* in backend and
+#### *npm start* in frontend
 #### *Try it for yourself:*
 1. **Name:** Dip
 2. **Link:** https://i.pinimg.com/originals/d2/67/36/d2673610de598a6ac91018f14f4ccb9f.jpg
