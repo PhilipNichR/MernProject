@@ -2,8 +2,10 @@
 ### A page, where you can add excercise moves
 ### To set up the whole thing, you first need:
 #### Backend
+* cd backend
 * npm init -y
 ##### Frontend
+* cd frontend
 * npm init -y
 #### And to run the whole page, you must write:
 #### **npm run dev** in backend and
